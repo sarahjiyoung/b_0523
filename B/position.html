@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{margin: 0;padding: 0;box-sizing: border-box;}
+        div.box{width: 100px;height: 100px;background-color: gray;}
+        div.box1{position: static;}
+        div.box2{
+            background-color: blue;
+            color: #fff;
+            position: absolute;
+            z-index: 1;
+            left: 60px;
+            top: 60px;
+
+        }
+        div.box3{
+            background-color: yellowgreen;
+            position: absolute;
+            left: 50px;
+            top: 50px;
+        }
+        div.box4{position: fixed;}
+        /* div.box5{position: sticky;} */
+      
+    </style>
+</head>
+<body>
+    <div class="box1 box">1static일반</div>
+    <div class="box2 box">2relative상대</div>
+    <div class="box3 box">3absolute절대</div>
+    <div class="box4 box">4fixed고정</div>
+    <div class="box5 box">5sticky스크롤</div>
+    <hr>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+</body>
+</html>

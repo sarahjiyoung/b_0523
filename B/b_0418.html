@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{padding: 0;margin: 0;}
+        body{
+            background-color: gray;
+        }
+        .wrapper{
+            width: 200px;
+            margin: 0 auto;
+            background-color: white;
+            /* padding: 1px; */
+            /* border: 1px solid transparent; */
+            overflow: hidden;
+            color: red;
+        }
+        .box{
+            width: 100px;
+            height: 100px;
+            margin: 50px;
+        }
+        /* .box1{
+            background-color: violet !important;
+            
+        }
+        .box2{
+            background-color: rgb(86, 69, 212);
+        }
+        #b1{
+            background-color: red;
+        } */
+        img{
+            width: 200px;
+            margin-right: -60px;
+        }
+        .box1 h1{
+            color: green;
+        }
+        .box1 h1::before{
+            content: '';
+            display: inline-block;
+            width: 10px;
+            height: 10px;
+            background-color: currentColor;
+            border-radius: 100%;
+            margin-right: 0.5em;
+        }
+        .box1 a{
+            color: inherit;
+        }
+    </style>
+</head>
+<body>
+    <!-- 부모 -->
+    <div class="wrapper">
+        <!-- 자식 -->
+        <img src="coffee2.png" alt="">
+        <div class="box1 box" id="b1">
+            <h1>Title</h1>
+            <a href="#">naver</a>
+            Lorem ipsum dolor, 
+            sit amet consectetur adipisicing elit.
+             Odio sed iste eius ad earum pariatur rem,
+             ab possimus dolorem? Ullam voluptas maxime
+              laborum quos exercitationem
+              nulla tenetur possimus odit velit!</div>
+    
+    </div>
+</body>
+</html>

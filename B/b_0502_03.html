@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>    
+        *{box-sizing: border-box;}
+        /* 부모 */
+        .menu{
+            overflow: hidden;
+            /* border: 1px solid red; */
+            background-color: #444;
+        }
+        div.menu a{
+            float: left;
+            color: white;
+            text-decoration: none;
+            padding: 1em;
+            text-align: center;
+            display: block;
+        }
+        div.menu a:hover{
+            background-color: red;
+        }
+        /* 모바일 메뉴 처리 */
+        @media screen and (max-width: 600px) {
+            div.menu a{
+                float: none;
+                width: 100%;
+            }            
+        }
+    </style>
+</head>
+<body>
+    <!-- 반응형웹 메뉴기초 -->
+    <!-- 부모 -->
+    <div class="menu">
+        <a href="#">menu1</a>
+        <a href="#">menu2</a>
+        <a href="#">menu3</a>
+        <a href="#">menu4</a>
+        <a href="#"><i class="fa fa-bars"></i></a>
+    </div>
+</body>
+</html>

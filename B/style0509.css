@@ -1,0 +1,67 @@
+body{
+    background-color: aquamarine;
+    height: 100vh;
+}
+
+*{margin: 0; padding: 0;}
+
+/* flex부모속성: container
+flex-direction, flex-wrap, justify-content,
+flex-flow, align-items, align-content */
+.container{
+    display: flex;
+    height: 150px;
+    /* flex-direction: column-reverse; */
+    /* flex-wrap: wrap; */
+    /* height: 100vh; */
+    /* border: 1px solid red; */
+    /* justify-content:space-between; */
+    /* flex-flow: row wrap; */
+    /* align-items: center; */
+    align-content: center;
+}
+/* flex자식속성: item
+flex, flex-grow(자라다), flex-shirnk(축소), 
+flex-basis(기본), order, align-self */
+
+.item{
+    width: 100px;
+    /* height: 50px; */
+    line-height: 50px;
+    text-align: center;
+    color: #fff;
+    font-size: 0.2em;
+    /* flex: 1; */
+}
+
+/* order 명령을 내린다. 박스순서변경(숫자가 높을 수록 뒤로감 7 > 2 > 1 */
+.item1{
+    background-color: red;
+    order: 1;
+}
+.item2{
+    background-color: orange;
+    order: 3;
+}
+.item3{
+    background-color: yellow;
+    order: 4;
+}
+.item4{
+    background-color: green;
+    order: 2;
+}
+.item5{
+    background-color: blue;
+    order: 1;
+    /* flex-grow: 1; */
+    align-self: center;
+}
+.item6{
+    background-color: navy;
+    order: 1;
+}
+.item7{
+    background-color: purple;
+    order: 1;
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{margin: 0; padding: 0;}
+        /* body{margin: 0;} */
+        h1{
+            background-color: blue; 
+            color: white;
+            text-align: center;
+            /* margin: 0;
+            padding: 0; */
+        
+        }
+        /* div p{line-height: 200%;} */
+
+        div .cla{
+            /* div태생은 블록레벨 그런데 강제로 바꿀 수 있음 
+                --> span처럼 인라인레벨로 변경*/
+            /* display: inline-block; */
+            display: none;
+            width: 100px;
+            height: 100px;
+            line-height: 100px;
+            text-align: center;
+        }
+        div .box1{
+            background-color: yellowgreen;
+        
+        }
+        div .box2{
+            background-color: blueviolet;
+        }
+      
+        p{font-size: 1em;}
+   
+   </style>
+</head>
+<body>
+    <h1>line-height</h1>
+    <div >
+        preeee
+        <!-- <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus asperiores quo distinctio, suscipit rerum odit, perspiciatis blanditiis hic, corporis repellat similique cumque voluptatibus nihil! Earum labore neque iste quibusdam ab!</p> -->
+        <div class="cla box1">box1</div>
+        <div class="cla box2">box2</div>
+       <p>sun</p>
+    </div>
+
+</body>
+</html>

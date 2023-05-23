@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{padding: 0;margin: 0;}
+        
+        div#content{
+            margin: 0 auto;
+            width: 500px;
+            background-color: aqua;
+            box-sizing: border-box;
+            }
+        
+        div.box1{
+            background-color: black;
+            color: white;
+            padding: 20px;
+        }
+        div.wrap{
+            /* border: 1px solid red; */
+        overflow: hidden;
+    }
+        div.wrap::after{
+            content: '';
+        }
+        /* div.wrap .box{float: left;} */
+        div.wrap .box2{
+            float: left; 
+            width: 150px;
+            background-color: yellow;
+        }
+        div.wrap .box3{
+            float: right; 
+            width: 350px;
+            background-color: darkgoldenrod;
+        }
+        div.box4{clear: both;}
+    </style>
+</head>
+<body>
+    <div id="content">
+    
+        <div class="box1">header</div>
+        <div class="wrap">
+            <div class="box box2">menu</div>
+            <div class="box box3">section2</div>
+        </div>
+        <div class="box4">footer</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* var()함수사용 */
+        :root{
+            --main-bg-color: rgb(220, 108, 108);
+            --text-m-font: 1rem;
+            --text-l-font: 2rem;
+        }
+        .header{
+            width: calc(100% - 80px);
+        }
+        .header p{
+            width: 200px;
+            background-color: aqua;
+        }
+        .header h1{
+            background-color: var(--main-bg-color);
+            font-size: var(--text-m-font);
+        }
+        .header h2{
+            color: var(--main-bg-color);
+            font-size: var(--text-l-font);
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <header class="header">
+        <p>var() 함수를 사용할거야</p>
+        <h1>88888</h1>
+        <h2>99999</h2>
+   </header>
+</body>
+</html>

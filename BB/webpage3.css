@@ -1,0 +1,67 @@
+/* 기본 CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+:root {
+  /* 글꼴 */
+  --text-h1: 2rem;
+  --text-h2: 1.2rem;
+
+  /* 색상 */
+  --color-wh: #fff;
+  --color-bl: #000;
+  --color-gr: #666;
+}
+
+/* 헤더 스타일 */
+header {
+  background-color: var(--color-bl);
+  padding: 20px;
+  color: var(--color-wh);
+  height: 10vh;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.logo {
+  font-size: var(--text-h1);
+  /* font-weight: bold;  */
+  float: left;
+  text-align: left;
+  line-height: 30px;
+  padding-left: 20px;
+}
+.logo span{
+    color: orangered;
+}
+
+.links {
+  float: right;
+}
+
+.links a {
+  color: var(--color-wh);
+  margin-left: 10px;
+  margin-right: 30px;
+  text-align: left;
+  line-height: 30px;
+}
+
+/* 정사각형 스타일 */
+.box-container {
+  background-color: var(--color-wh);
+  padding: 20px;
+  display: flex;
+}
+
+.box {
+  width: 300px;
+  height: 268px;
+  background-color: var(--color-gr);
+  margin-right: 30px;
+  margin-left: 30px;
+}
